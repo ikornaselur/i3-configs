@@ -184,9 +184,11 @@ bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff"
 # Bind mod+Shift+i/u to Icelandic/US Keyboard layout
 bindsym $mod+Shift+i exec setxkbmap is
 bindsym $mod+Shift+u exec setxkbmap us
+
+# Bind the lock screen
 bindsym $mod+q exec i3lock -c 000000 
 
-# Automatic startup
+# Start Spotify-notify and the audio applet
 exec ~/Apps/spotify-notify/spotify-notify.py -s
 exec --no-startup-id nm-applet
 
